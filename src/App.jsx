@@ -1,5 +1,6 @@
 
 import './App.css'
+import cors from 'cors';
 
 function App() {
   const submitForm = async (event) => {
@@ -16,6 +17,7 @@ function App() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'mode': 'no-cors',
         },
         body: JSON.stringify(jsonData),
       });
