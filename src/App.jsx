@@ -31,10 +31,13 @@ function App() {
 
   const submitForm = async (event) => {
     event.preventDefault();
-
+  
+    // Retrieve the concertId from the hidden input field
+    const concertId = document.querySelector('input[name="concertId"]').value;
+  
     // Combine all form data into a single object
-    const jsonData = { ...formData };
-
+    const jsonData = { ...formData, concertId }; // Add concertId manually
+  
     try {
       console.log(jsonData);
       const response = await fetch('https://w0483925-tickethub-api-ehddawaqa0e0dzca.canadacentral-01.azurewebsites.net/api/purchase', {
@@ -44,7 +47,7 @@ function App() {
         },
         body: JSON.stringify(jsonData),
       });
-
+  
       if (response.ok) {
         alert('Form submitted successfully!');
       } else {
