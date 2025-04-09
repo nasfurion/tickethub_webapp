@@ -6,6 +6,7 @@ import { useState } from 'react';
 function App() {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
+    concertId: '',
     email: '',
     name: '',
     phone: '',
