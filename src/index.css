@@ -1,58 +1,75 @@
 .header-content {
   max-width: 1600px;
-  position: relative; 
-  width: 100%; 
-  margin: 0 auto; 
-  text-align: center; 
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+
+}
+
+.ticket-logo {
+  max-height: 50px;
 }
 
 .header-image {
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
 }
 
 .band-name {
-  position: absolute; 
-  bottom: 0; 
-  left: 0; 
-  width: 100%; 
-  color: white; 
-  font-size: 2rem; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  font-size: 2rem;
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
-  background-color: rgba(0, 0, 0, 0.5); 
-  padding: 0.5rem; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
   box-sizing: border-box;
-  text-align: left; 
+  text-align: left;
   padding-left: 10%;
 }
 
-html, body {
-  height: 100%; 
-  margin: 0; 
+html,
+body {
+  height: 100%;
+  margin: 0;
   background-color: lightgrey;
 }
 
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
+  min-height: 100vh;
 }
 
 .container {
-  flex: 1; 
+  padding-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .page-container {
-  min-height: 100vh;
   flex-direction: column;
   max-width: 1600px;
   margin: 0 auto;
-  background-color: #2b2b2b; 
-  color: white; 
+  background-color: #2b2b2b;
+  color: white;
 }
 
-.card{
+.card {
   margin-top: 40;
 }
 
@@ -60,3 +77,36 @@ html, body {
   background-color: #121212;
 }
 
+.venue-container {
+  position: relative;
+  display: inline-block;
+}
+
+.venue {
+  max-height: 450px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffffff;
+  margin-top: 20px;
+}
+
+.venue-text {
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.bottom {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  width: 100vw;
+}
