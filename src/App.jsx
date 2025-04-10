@@ -284,7 +284,7 @@ function App() {
               <h5 className='text-center'>7:00 PM</h5>
               <h5 className='text-center'>Section 112, Row 10, Seat 15</h5>
               <hr />
-              <h3 className='text-center'>Your total: $129.65</h3>
+              <h3 className='text-center'>Ticket Price: $129.65</h3>
 
               <img src={scotiabank} className='venue' alt='Venue image'></img>
               <h3 className='text-center venue-text'>Scotiabank Centre - Halifax</h3>
