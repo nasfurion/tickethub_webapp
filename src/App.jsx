@@ -53,6 +53,25 @@ function App() {
 
       if (response.ok) {
         alert('Form submitted successfully!');
+
+        setFormData({
+          concertId: '',
+          email: '',
+          name: '',
+          phone: '',
+          quantity: '',
+          creditCard: '',
+          expiration: '',
+          securityCode: '',
+          address: '',
+          city: '',
+          province: '',
+          postalCode: '',
+          country: '',
+        });
+
+        setStep(1);
+         
       } else {
         const errorData = await response.json();
         alert(`Error: ${errorData.message}`);
